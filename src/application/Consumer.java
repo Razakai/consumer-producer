@@ -34,7 +34,7 @@ public class Consumer implements Runnable
          try 
          {
             //Thread.sleep( generator.nextInt( 5000 ) );
-        	 Thread.sleep(5000);
+        	Thread.sleep(5000);
             numFile = sharedLocation.get();
             
             consumerController consume = new consumerController(numFile, observe);

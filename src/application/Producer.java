@@ -26,7 +26,6 @@ public class Producer implements Runnable
          try // sleep 0 to 3 seconds, then place value in Buffer
          {
             //Thread.sleep( generator.nextInt( 5000 ) ); // random sleep
-        	 //Thread.sleep(5000);
             sharedLocation.set( count ); // set value in buffer
             producerController produce = new producerController(villanFactory, count);
             produce.start();
