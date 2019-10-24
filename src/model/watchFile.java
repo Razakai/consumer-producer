@@ -7,7 +7,7 @@ import java.io.IOException;
 public class watchFile{
 	
 	private static boolean exists = false;
-	private static String temp = "C:\\Users\\adam\\Desktop\\java\\workspace\\Villans\\battle-zone";
+	private static String temp = "C:\\Users\\adam\\Desktop\\java\\designPatternsWorkspace\\battle-zone";
 	
 
 

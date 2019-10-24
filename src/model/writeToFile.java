@@ -14,7 +14,7 @@ public class writeToFile {
 		
 		
 		
-		try(FileWriter fw = new FileWriter("C:\\Users\\adam\\Desktop\\java\\workspace\\Villans\\battle-zone"+num+".txt", true);
+		try(FileWriter fw = new FileWriter("C:\\Users\\adam\\Desktop\\java\\designPatternsWorkspace\\battle-zone"+num+".txt", true);
 			    BufferedWriter bw = new BufferedWriter(fw);
 			    PrintWriter out = new PrintWriter(bw))
 			{
@@ -32,8 +32,8 @@ public class writeToFile {
 		
 		try {
 			Files.move 
-			        (Paths.get("C:\\Users\\adam\\Desktop\\java\\workspace\\Villans\\battle-zone"+num+".txt"),  
-			        Paths.get("C:\\Users\\adam\\Desktop\\java\\workspace\\Villans\\saved-the-world-again\\battle-zone"+num+".txt"));
+			        (Paths.get("C:\\Users\\adam\\Desktop\\java\\designPatternsWorkspace\\battle-zone"+num+".txt"),  
+			        Paths.get("C:\\Users\\adam\\Desktop\\java\\designPatternsWorkspace\\savedTheWorldAgain\\battle-zone"+num+".txt"));
 					System.out.println("File renamed and moved successfully"); 
 					
 		} catch (IOException e) {
