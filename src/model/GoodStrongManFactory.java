@@ -6,8 +6,6 @@ public  class GoodStrongManFactory extends PersonStore {
 
 	@Override
 	person createPerson() {
-		//if (type.equals("GOODFLYMAN"))
-		
 			return new GoodStrongMan();
 		
 		

@@ -10,11 +10,11 @@ import java.util.Observer;
 public class Observing extends Observable {
 	
 	private ArrayList<Observer> observers = new ArrayList<Observer>();
-	Object[] villan;
+	Object[] villan; // observing villan object
 	
 	public Observing (String villanName, int num) {
 		super();
-		villan = new Object[]{villanName, num};
+		villan = new Object[]{villanName, num}; // init villan object array
 	}
 	
 	public ArrayList<Observer> getObservers(){
@@ -22,8 +22,8 @@ public class Observing extends Observable {
 	}
 	
 	
-	public void setPresent(String villanName, int fileNum) {
-		System.out.println("Hero name:"+ villanName);
+	public void setPresent(String villanName, int fileNum) { // changes values of villan array
+			//System.out.println("Hero name:"+ villanName);
 			this.villan[0] = villanName;
 			this.villan[1] = fileNum;
 			setChanged();
@@ -33,7 +33,7 @@ public class Observing extends Observable {
 	}
 	
 	
-	public void notifyObservers(Observable observable) {
+	public void notifyObservers(Observable observable) { // calls update method of all observers
 		System.out.println("Notifying superheros, Possible villan has arrived!");
 		for (Observer ob : observers) {
 			ob.update(observable, this.villan);
