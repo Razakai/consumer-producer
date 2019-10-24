@@ -1,5 +1,4 @@
 package application;
-// Two threads correctly manipulating a synchronized buffer.
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
@@ -24,5 +23,5 @@ public class SharedBufferTest2
       application.execute( new Consumer( sharedLocation ) );
 
       application.shutdown();
-   } // end main
-} // end class SharedBufferTest2
+   } 
+}
